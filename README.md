@@ -1,5 +1,3 @@
-# itsreimau.github.io
+# [itsreimau.github.io](https://itsreimau.github.io)
 
-Description: A beginner-friendly personal website template with helpful comments.
-
-Fork this repository and edit away!
+Simple personal website.
