@@ -1,0 +1,243 @@
+/* General Styles */
+body {
+    font-family: "Arial", sans-serif;
+    background: url("../img/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(14, 11, 22, 0.8);
+    color: #ff4d4d;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styles */
+nav {
+    background-color: rgba(44, 42, 51, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ff4d4d;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #ff4d4d;
+    background-color: rgba(255, 77, 77, 0.1);
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    background: rgba(14, 11, 22, 0.8);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* About Section Styles */
+.about-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    float: right;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Projects Section Styles */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    background-color: rgba(27, 26, 44, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ff4d4d;
+    border-radius: 10px;
+}
+
+.project-title {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.25em;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.project-title:hover,
+.project-title:focus {
+    color: #ff4d4d;
+    outline: none;
+}
+
+/* Contact Section Styles */
+.contact-container {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form h4 {
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 20px); /* Adjusted width to account for padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #ff4d4d;
+}
+
+.contact-form button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px; /* Increased border-radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ff4d4d;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.contact-form button i {
+    margin-right: 5px;
+}
+
+.contact-form button:focus {
+    outline: 2px solid #ff4d4d;
+}
+
+.contact-form button:hover {
+    background-color: #ff1a1a;
+}
+
+/* Social Media Button Styles */
+.social-media {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media h4 {
+    margin-bottom: 20px;
+}
+
+.social-media button {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ff4d4d;
+    background-color: transparent;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    border-radius: 5px; /* Adjusted border-radius */
+}
+
+.social-media button:hover {
+    background-color: #ff4d4d;
+    color: #ffffff;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(44, 42, 51, 0.8);
+    border-top: 1px solid #ff4d4d;
+}
