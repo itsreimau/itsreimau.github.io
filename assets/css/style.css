@@ -81,7 +81,7 @@ section {
 
 .about-image img {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     float: right;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -96,7 +96,7 @@ section {
 /* Projects Section Styles */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
 
@@ -169,7 +169,7 @@ section {
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
-    width: calc(100% - 20px); /* Adjusted width to account for padding */
+    width: calc(100% - 20px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -181,7 +181,7 @@ section {
 .contact-form button {
     padding: 8px 16px;
     border: none;
-    border-radius: 5px; /* Increased border-radius for rounded corners */
+    border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #ff4d4d;
     color: #ffffff;
@@ -226,7 +226,7 @@ section {
     color: #ffffff;
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
-    border-radius: 5px; /* Adjusted border-radius */
+    border-radius: 5px;
 }
 
 .social-media button:hover {
@@ -240,4 +240,45 @@ footer {
     padding: 20px;
     background-color: rgba(44, 42, 51, 0.8);
     border-top: 1px solid #ff4d4d;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-image img {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-form,
+    .social-media {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .social-media button {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
 }
