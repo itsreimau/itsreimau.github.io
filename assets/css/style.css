@@ -7,8 +7,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transform: scale(1);
-    transform-origin: top left;
 }
 
 /* Header Styles */
@@ -32,13 +30,17 @@ nav {
 
 nav ul {
     display: flex;
+    justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 100%;
+    text-align: center;
 }
 
 nav li {
     margin: 0;
+    flex: 1;
 }
 
 nav a {
@@ -46,8 +48,9 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     padding: 1vw 1.5vw;
-    text-align: center;
     transition: color 0.3s, background-color 0.3s;
+    display: block;
+    text-align: center;
 }
 
 nav a:hover,
@@ -104,13 +107,14 @@ section {
 }
 
 .project-item {
+    display: flex;
+    flex-direction: column;
     background-color: rgba(27, 26, 44, 0.8);
     padding: 1.5vw;
     border-radius: 1vw;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
     overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .project-item:hover {
@@ -123,6 +127,7 @@ section {
     height: auto;
     border: 0.2vw solid #ff4d4d;
     border-radius: 1vw;
+    margin-bottom: 1vw;
 }
 
 .project-title {
@@ -132,15 +137,18 @@ section {
     color: #ffffff;
     text-decoration: none;
     transition: color 0.3s;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
 .project-title:hover,
 .project-title:focus {
     color: #ff4d4d;
     outline: none;
+}
+
+.project-item p {
+    margin: 1vw 0 0 0;
+    padding: 0.5vw;
+    text-align: center;
 }
 
 /* Contact Section Styles */
@@ -248,4 +256,45 @@ footer {
     padding: 2vw;
     background-color: rgba(44, 42, 51, 0.8);
     border-top: 0.1vw solid #ff4d4d;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 0.5vw 0;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        padding-right: 0;
+        margin-bottom: 2vw;
+    }
+
+    .about-image img {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-form,
+    .social-media {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .social-media button {
+        width: 100%;
+    }
 }
