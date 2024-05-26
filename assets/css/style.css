@@ -102,7 +102,7 @@ section {
 /* Projects Section Styles */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2vw;
 }
 
@@ -114,7 +114,7 @@ section {
     border-radius: 1vw;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    overflow: hidden;
+    overflow: hidden; /* Ensure content does not overflow */
 }
 
 .project-item:hover {
@@ -148,7 +148,7 @@ section {
 .project-item p {
     margin: 1vw 0 0 0;
     padding: 0.5vw;
-    text-align: center;
+    text-align: justify;
 }
 
 /* Contact Section Styles */
@@ -260,14 +260,6 @@ footer {
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav li {
-        margin: 0.5vw 0;
-    }
-
     .about-container {
         flex-direction: column;
         text-align: center;
@@ -296,5 +288,29 @@ footer {
 
     .social-media button {
         width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 0.5vw 0;
+    }
+
+    .projects-grid {
+        grid-template-columns: ;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
