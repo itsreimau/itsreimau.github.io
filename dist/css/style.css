@@ -1,0 +1,150 @@
+/* General Styles */
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* Theme */
+.tgr-theme {
+}
+
+.tgr-text-theme {
+    color: #ff4d4d;
+}
+
+/* Jumbotron */
+.jumbotron {
+    padding: 2rem 1rem;
+    padding-top: 2rem;
+}
+
+/* Social Buttons */
+.social-btn {
+    color: #ff4d4d;
+}
+
+.social-btn:hover {
+    color: #ff3333;
+}
+
+/* Verified Icon */
+.verified-icon {
+    color: #ff4d4d;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #ff4d4d;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation Icons */
+.nav-icon {
+    color: #ff4d4d;
+    font-size: 1.5rem;
+    width: 30%;
+    max-width: 150px;
+    height: auto;
+}
+
+/* Navigation */
+.nav a {
+    display: block;
+    margin: 0 1rem;
+    text-align: center;
+    color: #ff4d4d;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav a:hover {
+}
+
+/* Projects */
+#project .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    width: 90%;
+    max-width: 600px;
+    border: 2px solid #ff4d4d;
+    border-radius: 15px;
+    box-shadow: 8px 8px #ff4d4d;
+    background-color: transparent;
+}
+
+#project .btn i {
+    margin-right: 15px;
+}
+
+#project .btn:hover {
+    background-color: #ff3333;
+    box-shadow: 8px 8px #ff3333;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-form .form-label {
+    text-align: left;
+}
+
+.contact-form .form-control {
+    background-color: transparent;
+    border: 1px solid #ff4d4d;
+}
+
+.contact-form .form-control:focus {
+    background-color: #ff3333;
+    border-color: #ff3333;
+}
+
+.contact-form .btn-primary {
+    background-color: #ff4d4d;
+    border-color: #ff4d4d;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #ff3333;
+    border-color: #ff3333;
+}
+
+/* Opacity */
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-25 {
+    opacity: 0.25;
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.opacity-75 {
+    opacity: 0.75;
+}
+
+.opacity-100 {
+    opacity: 1;
+}

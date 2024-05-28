@@ -1,4 +1,18 @@
-document.getElementById("contact-form").addEventListener("submit", function(event) {
+// Function to show the specified section and hide others
+function showSection(sectionId) {
+    document.getElementById("aboutMe").style.display = "none";
+    document.getElementById("project").style.display = "none";
+    document.getElementById("contact").style.display = "none";
+    document.getElementById(sectionId).style.display = "block";
+}
+
+// Automatically show the About Me section when the page loads
+window.addEventListener("load", function () {
+    showSection("aboutMe");
+});
+
+// Contact form submission handling
+document.getElementById("contact-form").addEventListener("submit", function (event) {
     event.preventDefault();
 
     // Retrieve values from the form inputs
@@ -10,7 +24,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     var telegramMessage = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
 
     // Telegram bot token and chat ID
-    var botToken = "6965417635:AAHWNvyI0-RDkk8J-Ge_-pdzx03QZ6EBUOc";
+    var botToken = "6482372056:AAE1XqjJHUuLJnExe8dRqQ43Oh5FZsOzFUc";
     var chatId = "1478393648";
 
     // Function to send message to Telegram bot
