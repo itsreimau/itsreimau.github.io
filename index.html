@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- Open Graph / Facebook -->
-        <meta property="og:url" content="itsreimau.is-a.dev" />
+        <meta property="og:url" content="https://itsreimau.is-a.dev" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="ItsReimau" />
         <meta property="og:description" content="My name is Muhamad Ikbal Maulana alias ItsReimau. I am a Bot Developer, IT Enthusiast, Virtual Entertainment Enthusiast, etc." />
@@ -34,6 +34,29 @@
         <link rel="stylesheet" type="text/css" href="dist/css/style.css" />
     </head>
     <body class="tgr-theme">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">ItsReimau</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('aboutMe')">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('project')">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('contact')">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <!-- Main Section -->
         <section class="jumbotron text-center">
             <div class="container tgr-text-theme">
@@ -43,25 +66,25 @@
                 <p class="opacity-75">Bot Developer, Liminal Space Enthusiast, IT Enthusiast, Virtual Entertainment Enthusiast, etc.</p>
                 <div class="d-flex flex-wrap justify-content-center my-4 align-items-center py">
                     <ul class="text-center nav col-md justify-content-center list-unstyled d-flex">
-                        <li class="ms-1">
+                        <li class="mx-2">
                             <a class="social-btn btn" href="https://www.facebook.com/itsreimau"><span class="fab fa-facebook fa-1x"></span></a>
                         </li>
-                        <li class="ms-1">
+                        <li class="mx-2">
                             <a class="social-btn btn" href="https://github.com/itsreimau"><span class="fab fa-github fa-1x"></span></a>
                         </li>
-                        <li class="ms-1">
+                        <li class="mx-2">
                             <a class="social-btn btn" href="https://instagram.com/itsreimau"><span class="fab fa-instagram fa-1x"></span></a>
                         </li>
-                        <li class="ms-1">
+                        <li class="mx-2">
                             <a class="social-btn btn" href="https://www.linkedin.com/in/itsreimau"><span class="fab fa-linkedin fa-1x"></span></a>
                         </li>
-                        <li class="ms-1">
+                        <li class="mx-2">
                             <a class="social-btn btn" href="https://t.me/itsreimau"><span class="fab fa-telegram fa-1x"></span></a>
                         </li>
-                        <li class="ms-1">
+                        <li class="mx-2">
                             <a class="social-btn btn" href="https://twitter.com/itsreimau"><span class="fab fa-twitter fa-1x"></span></a>
                         </li>
-                        <li class="ms-1">
+                        <li class="mx-2">
                             <a class="social-btn btn" href="https://youtube.com/@itsreimau"><span class="fab fa-youtube fa-1x"></span></a>
                         </li>
                     </ul>
@@ -69,91 +92,84 @@
             </div>
         </section>
 
-        <!-- Navigation Section -->
-        <section class="jumbotron text-center">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <div style="text-align: center;">
-                            <a href="javascript:void(0);" onclick="showSection('aboutMe')" style="color: #ffffff;">
-                                <i class="fas fa-user nav-icon"></i><br />
-                                About Me
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div style="text-align: center;">
-                            <a href="javascript:void(0);" onclick="showSection('project')" style="color: #ffffff;">
-                                <i class="fas fa-briefcase nav-icon"></i><br />
-                                Project
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div style="text-align: center;">
-                            <a href="javascript:void(0);" onclick="showSection('contact')" style="color: #ffffff;">
-                                <i class="fas fa-envelope nav-icon"></i><br />
-                                Contact
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <!-- Now Playing on Spotify Section -->
+        <section class="jumbotron text-center" id="nowPlayingOnSpotify">
+            <div class="container tgr-text-theme">
+                <p><strong>Now Playing on Spotify</strong></p>
+                <a href="https://open.spotify.com/user/31253dtz6tzyra5ewpcgpipeuefy">
+                    <img
+                        src="https://spotify-github-profile.vercel.app/api/view?uid=31253dtz6tzyra5ewpcgpipeuefy&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true"
+                        alt="Now Playing on Spotify"
+                    />
+                </a>
             </div>
         </section>
 
         <!-- About Me Section -->
         <section class="jumbotron text-center" id="aboutMe" style="display: none;">
             <div class="container tgr-text-theme">
-                <p><strong>About Me</strong></p>
-                <p>Hello! My name is Muhamad Ikbal Maulana alias ItsReimau. I am a Bot Developer, IT Enthusiast, Virtual Entertainment Enthusiast, etc.</p>
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>About Me</strong></h5>
+                        <p class="card-text">Hello! My name is Muhamad Ikbal Maulana alias ItsReimau. I am a Bot Developer, IT Enthusiast, Virtual Entertainment Enthusiast, etc.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Projects Section -->
         <section class="jumbotron text-center" id="project" style="display: none;">
             <div class="container tgr-text-theme">
-                <p><strong>Projects</strong></p>
-                <p>Here are some of my projects:</p>
-                <button class="project-btn btn d-flex align-items-center justify-content-center" onclick="window.location='https://api-gabut.bohr.io/';">
-                    <i class="fa fa-network-wired fa-lg me-3"></i>
-                    <span style="color: #ffffff;">API Gabut</span>
-                </button>
-                <button class="project-btn btn d-flex align-items-center justify-content-center" onclick="window.location='https://api-pautres.bohr.io/';">
-                    <i class="fa fa-network-wired fa-lg me-3"></i>
-                    <span style="color: #ffffff;">API Pautres</span>
-                </button>
-                <button class="project-btn btn d-flex align-items-center justify-content-center" onclick="window.location='https://t.me/reilunara_bot';">
-                    <i class="fa fa-robot fa-lg me-3"></i>
-                    <span style="color: #ffffff;">Reilunara Bot</span>
-                </button>
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Projects</strong></h5>
+                        <p class="card-text">Here are some of my projects:</p>
+                        <button class="project-btn btn d-flex align-items-center justify-content-center" onclick="window.location='https://api-gabut.bohr.io/';">
+                            <i class="fa fa-network-wired fa-lg me-3" style="color: #ffffff;"></i>
+                            <span style="color: #ffffff;">API Gabut</span>
+                        </button>
+                        <button class="project-btn btn d-flex align-items-center justify-content-center" onclick="window.location='https://api-pautres.bohr.io/';">
+                            <i class="fa fa-network-wired fa-lg me-3" style="color: #ffffff;"></i>
+                            <span style="color: #ffffff;">API Pautres</span>
+                        </button>
+                        <button class="project-btn btn d-flex align-items-center justify-content-center" onclick="window.location='https://t.me/reilunara_bot';">
+                            <i class="fa fa-robot fa-lg me-3" style="color: #ffffff;"></i>
+                            <span style="color: #ffffff;">Reilunara Bot</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section class="jumbotron text-center" id="contact" style="display: none;">
             <div class="container tgr-text-theme">
-                <p><strong>Contact</strong></p>
-                <p>You can contact me through the form below:</p>
-                <form id="contact-form" class="contact-form">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name:</label>
-                        <input type="text" id="name" name="name" class="form-control" required />
+                <div class="card bg-dark text-white">
+                    <div class="card-body">
+                        <h5 class="card-title"><strong>Contact</strong></h5>
+                        <p class="card-text">You can contact me through the form below:</p>
+                        <form id="contact-form" class="contact-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" id="name" name="name" class="form-control" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" id="email" name="email" class="form-control" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message:</label>
+                                <textarea id="message" name="message" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email:</label>
-                        <input type="email" id="email" name="email" class="form-control" required />
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message:</label>
-                        <textarea id="message" name="message" class="form-control" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send</button>
-                </form>
+                </div>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="jumbotron text-center">
+        <footer class="jumbotron text-center bg-dark text-white">
             <p class="tgr-text-theme">Copyright &copy; 2024 ItsReimau. All Rights Reserved.</p>
         </footer>
 

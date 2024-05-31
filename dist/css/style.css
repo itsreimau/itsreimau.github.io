@@ -10,12 +10,10 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
+    font-family: "Arial", sans-serif;
 }
 
 /* Theme */
-.tgr-theme {
-}
-
 .tgr-text-theme {
     color: #ffffff;
 }
@@ -23,12 +21,24 @@ body {
 /* Jumbotron */
 .jumbotron {
     padding: 2rem 1rem;
-    padding-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 0;
+}
+
+/* Navbar */
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff3333;
 }
 
 /* Social Buttons */
 .social-btn {
     color: #ffffff;
+    transition: color 0.3s;
 }
 
 .social-btn:hover {
@@ -46,17 +56,12 @@ body {
     height: 150px;
     border: 5px solid #ffffff;
     border-radius: 50%;
-    max-width: 100%;
-    height: auto;
 }
 
 /* Navigation Icons */
 .nav-icon {
     color: #ffffff;
     font-size: 1.5rem;
-    width: 30%;
-    max-width: 150px;
-    height: auto;
 }
 
 /* Navigation */
@@ -65,11 +70,12 @@ body {
     margin: 0 1rem;
     text-align: center;
     color: #ffffff;
-    text-decoration: none;
     font-size: 1.2rem;
+    transition: color 0.3s;
 }
 
 .nav a:hover {
+    color: #ff3333;
 }
 
 /* Projects */
@@ -85,17 +91,13 @@ body {
     max-width: 600px;
     border: 2px solid #ffffff;
     border-radius: 15px;
-    box-shadow: 8px 8px #ffffff;
     background-color: transparent;
-}
-
-#project .btn i {
-    margin-right: 15px;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 #project .btn:hover {
     background-color: #ff3333;
-    box-shadow: 8px 8px #ff3333;
+    box-shadow: 0 0 10px #ff3333;
 }
 
 /* Contact Form */
@@ -111,40 +113,28 @@ body {
 .contact-form .form-control {
     background-color: transparent;
     border: 1px solid #ffffff;
+    color: #ffffff;
 }
 
 .contact-form .form-control:focus {
-    background-color: #ff3333;
+    background-color: #333;
     border-color: #ff3333;
 }
 
 .contact-form .btn-primary {
     background-color: #ffffff;
     border-color: #ffffff;
+    color: #000;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
 
 .contact-form .btn-primary:hover {
     background-color: #ff3333;
     border-color: #ff3333;
+    color: #ffffff;
 }
 
 /* Opacity */
-.opacity-0 {
-    opacity: 0;
-}
-
-.opacity-25 {
-    opacity: 0.25;
-}
-
-.opacity-50 {
-    opacity: 0.5;
-}
-
 .opacity-75 {
     opacity: 0.75;
-}
-
-.opacity-100 {
-    opacity: 1;
 }
