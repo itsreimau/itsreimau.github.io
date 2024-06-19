@@ -1,8 +1,7 @@
 // Function to show the specified section and hide others
 function showSection(sectionId) {
-    document.getElementById("aboutMe").style.display = "none";
-    document.getElementById("project").style.display = "none";
-    document.getElementById("contact").style.display = "none";
+    const sections = document.querySelectorAll(".dynamic-section");
+    sections.forEach((section) => (section.style.display = "none"));
     document.getElementById(sectionId).style.display = "block";
 }
 
@@ -12,7 +11,7 @@ window.addEventListener("load", function () {
 });
 
 // Contact form submission handling
-document.getElementById("contact-form").addEventListener("submit", function (event) {
+document.getElementById("contact").addEventListener("submit", function (event) {
     event.preventDefault();
 
     // Retrieve values from the form inputs

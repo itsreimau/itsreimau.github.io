@@ -1,52 +1,11 @@
-/* General Styles */
-a {
-    text-decoration: none;
+/* Body Theme */
+body.tgr-theme {
+    background-color: #1e1e2f; /* Darker background inspired by Rei Ayanami */
+    color: #ffffff;
 }
 
-html,
-body {
-    scroll-behavior: smooth;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background.jpg") no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    font-family: "Arial", sans-serif;
-}
-
-/* Theme */
+/* Text Theme */
 .tgr-text-theme {
-    color: #ffffff;
-}
-
-/* Jumbotron */
-.jumbotron {
-    padding: 2rem 1rem;
-    background-color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 0;
-}
-
-/* Navbar */
-.navbar-dark .navbar-nav .nav-link {
-    color: #ffffff;
-    transition: color 0.3s;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #ff3333;
-}
-
-/* Social Buttons */
-.social-btn {
-    color: #ffffff;
-    transition: color 0.3s;
-}
-
-.social-btn:hover {
-    color: #ff3333;
-}
-
-/* Verified Icon */
-.verified-icon {
     color: #ffffff;
 }
 
@@ -54,87 +13,76 @@ body {
 .profile-img {
     width: 150px;
     height: 150px;
+    object-fit: cover;
     border: 5px solid #ffffff;
-    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-/* Navigation Icons */
-.nav-icon {
-    color: #ffffff;
-    font-size: 1.5rem;
+/* Verified Icon */
+.verified-icon {
+    color: #1da1f2;
+    margin-left: 5px;
 }
 
-/* Navigation */
-.nav a {
-    display: block;
-    margin: 0 1rem;
-    text-align: center;
-    color: #ffffff;
-    font-size: 1.2rem;
-    transition: color 0.3s;
+/* Navbar Links */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75);
+    margin-right: 10px;
 }
 
-.nav a:hover {
-    color: #ff3333;
-}
-
-/* Projects */
-#project .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px auto;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    width: 90%;
-    max-width: 600px;
-    border: 2px solid #ffffff;
-    border-radius: 15px;
-    background-color: transparent;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-#project .btn:hover {
-    background-color: #ff3333;
-    box-shadow: 0 0 10px #ff3333;
-}
-
-/* Contact Form */
-.contact-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.contact-form .form-label {
-    text-align: left;
-}
-
-.contact-form .form-control {
-    background-color: transparent;
-    border: 1px solid #ffffff;
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
     color: #ffffff;
 }
 
-.contact-form .form-control:focus {
-    background-color: #333;
-    border-color: #ff3333;
-}
-
-.contact-form .btn-primary {
-    background-color: #ffffff;
+/* Social Buttons */
+.social-btn {
+    color: #ffffff;
     border-color: #ffffff;
-    color: #000;
-    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    margin: 5px;
 }
 
-.contact-form .btn-primary:hover {
-    background-color: #ff3333;
-    border-color: #ff3333;
+.social-btn:hover {
+    color: #1da1f2;
+    border-color: #1da1f2;
+}
+
+/* Card */
+.card.bg-dark {
+    background-color: #2c2c3d; /* Darker background for card inspired by Rei Ayanami */
+    border: 1px solid #1da1f2;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* Card Title */
+.card .card-title {
+    border-bottom: 2px solid #1da1f2;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* List Group Item */
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid #1da1f2;
+    padding: 10px 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #2c2c3d; /* Darker background for footer inspired by Rei Ayanami */
     color: #ffffff;
+    padding: 20px 0;
+    margin-top: 20px;
 }
 
-/* Opacity */
-.opacity-75 {
-    opacity: 0.75;
+/* Footer Links */
+footer a {
+    color: #1da1f2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
