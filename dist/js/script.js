@@ -23,7 +23,7 @@ document.getElementById("contact").addEventListener("submit", function (event) {
     var telegramMessage = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
 
     // Telegram bot token and chat ID
-    var botToken = "6482372056:AAE1XqjJHUuLJnExe8dRqQ43Oh5FZsOzFUc";
+    var botToken = "7347562119:AAEpmtWSXM82C0khXXTgAt6uzqnSjO1S53M";
     var chatId = "1478393648";
 
     // Function to send message to Telegram bot
