@@ -21,9 +21,6 @@
         <meta name="twitter:description" content="My name is Muhamad Ikbal Maulana alias ItsReimau. I am a Bot Developer, IT Enthusiast, Virtual Entertainment Enthusiast, etc." />
         <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/90613431?v=4" />
 
-        <!-- Preconnection to reduce DNS lookup time -->
-        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" crossorigin="anonymous" />
 
@@ -31,7 +28,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" />
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" type="text/css" href="dist/css/style.css" />
+        <link rel="stylesheet" href="dist/css/style.css" />
     </head>
     <body class="tgr-theme">
         <!-- Navbar -->
@@ -43,24 +40,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('aboutMe')">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('skills')">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('workExperience')">Work Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('education')">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('projects')">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('contact')">Contact</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="showSection('aboutMe')">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="showSection('skills')">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="showSection('workExperience')">Work Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="showSection('education')">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="showSection('projects')">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="showSection('contact')">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -68,9 +53,9 @@
 
         <!-- Main Section -->
         <section class="jumbotron text-center">
-            <div class="container tgr-text-theme">
+            <div class="container">
                 <img src="https://avatars.githubusercontent.com/u/90613431?v=4" class="profile-img rounded-circle" alt="Foto" />
-                <h5 class="tgr-text-theme"><strong>ItsReimau&nbsp;</strong><span class="fas fa-check-circle verified-icon"></span></h5>
+                <h5 class="tgr-text-theme"><strong>ItsReimau</strong><span class="fas fa-check-circle verified-icon"></span></h5>
                 <p><span class="fas fa-map-marker-alt"></span>&nbsp;Kabupaten Bogor, Jawa Barat, Indonesia</p>
                 <p class="opacity-75">Bot Developers, Evangelion Fans, IT Enthusiasts, Virtual Entertainment Enthusiasts, etc.</p>
                 <div class="d-flex flex-wrap justify-content-center my-4 align-items-center py">
@@ -103,8 +88,8 @@
 
         <!-- Now Playing on Spotify Section -->
         <section class="jumbotron text-center" id="nowPlayingOnSpotify">
-            <div class="container tgr-text-theme">
-                <p><strong>Now Playing on Spotify</strong></p>
+            <div class="container">
+                <p class="tgr-text-theme"><strong>Now Playing on Spotify</strong></p>
                 <a href="https://open.spotify.com/user/31253dtz6tzyra5ewpcgpipeuefy">
                     <img
                         src="https://spotify-github-profile.kittinanx.com/api/view?uid=31253dtz6tzyra5ewpcgpipeuefy&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true"
@@ -115,26 +100,9 @@
             </div>
         </section>
 
-        <!-- Spotify Favorites Playlists Section -->
-        <section class="jumbotron text-center" id="spotifyPlaylist">
-            <div class="container tgr-text-theme">
-                <p><strong>My Spotify Favorites Playlist</strong></p>
-                <iframe
-                    style="border-radius: 12px;"
-                    src="https://open.spotify.com/embed/playlist/37i9dQZF1DWTIAgtZV6kbs?utm_source=generator"
-                    width="80%"
-                    height="152"
-                    frameborder="0"
-                    allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"
-                ></iframe>
-            </div>
-        </section>
-
         <!-- About Me Section -->
         <section class="jumbotron text-center dynamic-section" id="aboutMe" style="display: none;">
-            <div class="container tgr-text-theme">
+            <div class="container">
                 <div class="card bg-dark text-white my-4">
                     <div class="card-body">
                         <h5 class="card-title"><strong>About Me</strong></h5>
@@ -146,7 +114,7 @@
 
         <!-- Skills Section -->
         <section class="jumbotron text-center dynamic-section" id="skills" style="display: none;">
-            <div class="container tgr-text-theme">
+            <div class="container">
                 <div class="card bg-dark text-white my-4">
                     <div class="card-body">
                         <h5 class="card-title"><strong>Skills</strong></h5>
@@ -171,7 +139,7 @@
 
         <!-- Work Experience Section -->
         <section class="jumbotron text-center dynamic-section" id="workExperience" style="display: none;">
-            <div class="container tgr-text-theme">
+            <div class="container">
                 <div class="card bg-dark text-white my-4">
                     <div class="card-body">
                         <h5 class="card-title"><strong>Work Experience</strong></h5>
@@ -189,7 +157,7 @@
 
         <!-- Education Section -->
         <section class="jumbotron text-center dynamic-section" id="education" style="display: none;">
-            <div class="container tgr-text-theme">
+            <div class="container">
                 <div class="card bg-dark text-white my-4">
                     <div class="card-body">
                         <h5 class="card-title"><strong>Education</strong></h5>
@@ -206,13 +174,18 @@
 
         <!-- Projects Section -->
         <section class="jumbotron text-center dynamic-section" id="projects" style="display: none;">
-            <div class="container tgr-text-theme">
+            <div class="container">
                 <div class="card bg-dark text-white my-4">
                     <div class="card-body">
                         <h5 class="card-title"><strong>Projects</strong></h5>
                         <p class="card-text">Here are some of my projects:</p>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-dark text-white">Cek Khodam • Check your Khodam now! <a href="https://t.me/cekkhodam_kabot" class="btn btn-outline-light btn-sm ms-3">View Project</a></li>
+                            <li class="list-group-item bg-dark text-white">API Gabut • A collection of APIs created during idle time. <a href="https://wa.me/6281918403548" class="btn btn-outline-light btn-sm ms-3">View Project</a></li>
+                            <li class="list-group-item bg-dark text-white">
+                                API Pautres • A Web Server-based API that can be integrated into AutoResponder applications. <a href="https://wa.me/6281918403548" class="btn btn-outline-light btn-sm ms-3">View Project</a>
+                            </li>
+                            <li class="list-group-item bg-dark text-white">Cek Khodam • Telegram Bot <a href="https://t.me/cekkhodam_kabot" class="btn btn-outline-light btn-sm ms-3">View Project</a></li>
+                            <li class="list-group-item bg-dark text-white">Rei Ayanami • WhatsApp Bot <a href="https://wa.me/6281918403548" class="btn btn-outline-light btn-sm ms-3">View Project</a></li>
                         </ul>
                     </div>
                 </div>
@@ -221,7 +194,7 @@
 
         <!-- Contact Section -->
         <section class="jumbotron text-center dynamic-section" id="contact" style="display: none;">
-            <div class="container tgr-text-theme">
+            <div class="container">
                 <div class="card bg-dark text-white my-4">
                     <div class="card-body">
                         <h5 class="card-title"><strong>Contact</strong></h5>
