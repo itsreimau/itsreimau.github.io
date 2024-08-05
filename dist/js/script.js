@@ -6,12 +6,12 @@ function showSection(sectionId) {
 }
 
 // Automatically show the About Me section when the page loads
-window.addEventListener("load", function () {
+window.addEventListener("load", function() {
     showSection("aboutMe");
 });
 
 // Contact form submission handling
-document.getElementById("contact").addEventListener("submit", function (event) {
+document.getElementById("contact").addEventListener("submit", function(event) {
     event.preventDefault();
 
     // Retrieve values from the form inputs
