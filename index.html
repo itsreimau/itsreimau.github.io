@@ -5,7 +5,7 @@
         <title>ItsReimau</title>
         <link rel="icon" href="https://avatars.githubusercontent.com/u/90613431?v=4" />
         <meta name="description" content="My name is Muhamad Ikbal Maulana alias ItsReimau. I am a Bot Developer, Evangelion Fan, IT Enthusiast, Office Science Student, and Virtual Entertainment Enthusiast." />
-        <meta name="keywords" content="bot developers, itsreimau, muhamad ikbal maulana, liminal space enthusiasts, it enthusiasts, virtual entertainment enthusiasts" />
+        <meta name="keywords" content="bot developers, itsreimau, muhamad ikbal maulana, liminal space enthusiasts, IT enthusiasts, virtual entertainment enthusiasts" />
         <meta name="author" content="Muhamad Ikbal Maulana | ItsReimau" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -28,10 +28,16 @@
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" />
 
-        <!-- Custom CSS -->
+        <!-- Local CSS -->
         <link rel="stylesheet" href="dist/css/style.css" />
     </head>
+
     <body class="tgr-theme">
+        <!-- Preloader -->
+        <div id="preloader">
+            <img src="https://avatars.githubusercontent.com/u/90613431?v=4" alt="Logo" />
+        </div>
+
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -41,12 +47,21 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="showSection('aboutMe')">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="showSection('skills')">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="showSection('workExperience')">Work Experience</a></li>
-                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="showSection('education')">Education</a></li>
-                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="showSection('projects')">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="javascript:void(0);" onclick="showSection('contact')">Contact</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('aboutMe')">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('skills')">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('workExperience')">Work Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('education')">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('projects')">Projects</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -58,7 +73,7 @@
                 <img src="https://avatars.githubusercontent.com/u/90613431?v=4" class="profile-img rounded-circle" alt="Foto" />
                 <h5 class="tgr-text-theme"><strong>ItsReimau</strong><span class="fas fa-check-circle verified-icon"></span></h5>
                 <p><span class="fas fa-map-marker-alt"></span>&nbsp;Kabupaten Bogor, Jawa Barat, Indonesia</p>
-                <p class="opacity-75">“I make what I want.”</p>
+                <p class="opacity-75">"I create what I desire."</p>
                 <div class="d-flex flex-wrap justify-content-center my-4 align-items-center py">
                     <ul class="text-center nav col-md justify-content-center list-unstyled d-flex">
                         <li class="mx-2">
@@ -122,16 +137,16 @@
                         <p class="card-text">Here are some of my skills:</p>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item bg-dark text-white">
-                                WhatsApp & Telegram Bot Development • Node.js, Baileys, Telegraf
+                                Backend Development • Express.js, Node.js, PHP
                             </li>
                             <li class="list-group-item bg-dark text-white">
-                                Telegram Bot Development • PHP, PHPTelebot
+                                Bot Development • Baileys, PHPTelebot, Telegraf
                             </li>
                             <li class="list-group-item bg-dark text-white">
-                                Backend Development • Node.js, Express.js, PHP
+                                Graphic Design • Canva, PixelLab
                             </li>
                             <li class="list-group-item bg-dark text-white">
-                                Graphic Design • PixelLab
+                                Microsoft Office • Excel, PowerPoint, Word
                             </li>
                             <li class="list-group-item bg-dark text-white">
                                 Video Editing • KineMaster
@@ -151,7 +166,7 @@
                         <p class="card-text">Here is my work experience:</p>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item bg-dark text-white">Operational Staff at VYouLive • 2023-Now</li>
-                            <li class="list-group-item bg-dark text-white">Internship at the Leuwimalang Village Office • 2023</li>
+                            <li class="list-group-item bg-dark text-white">Internship at Leuwimalang Village Office • 2023</li>
                             <li class="list-group-item bg-dark text-white">Founder at MoeLive ID • 2023</li>
                             <li class="list-group-item bg-dark text-white">CEO at Raturnux (Formerly Hanshin ID) • 2022-2023</li>
                             <li class="list-group-item bg-dark text-white">Operational Staff at Hanshin ID • 2021-2022</li>
@@ -187,6 +202,9 @@
                         <p class="card-text">Here are some of my projects:</p>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item bg-dark text-white">API Pautres • AutoResponder Web Server-based API <a href="https://api-pautres.bohr.io/" class="btn btn-outline-light btn-sm ms-3">View Project</a></li>
+                            <li class="list-group-item bg-dark text-white">
+                                AR (AutoResponder) Express Bot Starter • AutoResponder Web Server-based WhatsApp Bot <a href="https://github.com/itsreimau/ar-express-bot-starter" class="btn btn-outline-light btn-sm ms-3">View Project</a>
+                            </li>
                             <li class="list-group-item bg-dark text-white">Cek Khodam • Telegram Bot <a href="https://t.me/cekkhodam_kabot" class="btn btn-outline-light btn-sm ms-3">View Project</a></li>
                             <li class="list-group-item bg-dark text-white">Rei Ayanami • WhatsApp Bot <a href="rei-ayanami" class="btn btn-outline-light btn-sm ms-3">View Project</a></li>
                         </ul>
@@ -196,29 +214,11 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="jumbotron text-center dynamic-section" id="contact" style="display: none;">
+        <section id="contact" class="text-center py-5">
             <div class="container">
-                <div class="card bg-dark text-white my-4">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Contact</strong></h5>
-                        <p class="card-text">You can contact me via the form below:</p>
-                        <form>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" required />
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" required />
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="3" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </form>
-                    </div>
-                </div>
+                <h2 class="tgr-text-theme mb-4">Contact Me</h2>
+                <p>If you want to reach out, feel free to send me an email at:</p>
+                <a href="mailto:iblmln@outlook.co.id" class="btn btn-outline-light"> <i class="fas fa-envelope"></i> iblmln@outlook.co.id </a>
             </div>
         </section>
 
@@ -229,11 +229,10 @@
             </div>
         </footer>
 
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap and JS Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
-        <!-- Custom JS -->
+        <!-- Local JS -->
         <script src="dist/js/script.js"></script>
     </body>
 </html>

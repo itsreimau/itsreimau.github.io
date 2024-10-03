@@ -5,57 +5,14 @@ function showSection(sectionId) {
     document.getElementById(sectionId).style.display = "block";
 }
 
+// Preloader
+window.onload = function() {
+    setTimeout(function() {
+        document.getElementById("preloader").style.display = "none";
+    }, 2000);
+};
+
 // Automatically show the About Me section when the page loads
 window.addEventListener("load", function() {
     showSection("aboutMe");
 });
-
-// Contact form submission handling
-document.getElementById("contact").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    // Retrieve values from the form inputs
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
-
-    // Create a message to send to the Telegram bot
-    var telegramMessage = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
-
-    // Telegram bot token and chat ID
-    var botToken = "7347562119:AAEpmtWSXM82C0khXXTgAt6uzqnSjO1S53M";
-    var chatId = "1478393648";
-
-    // Function to send message to Telegram bot
-    sendMessageToTelegram(botToken, telegramMessage, chatId)
-        .then((response) => {
-            if (response.ok) {
-                alert("Your message has been sent!");
-            } else {
-                return response.text().then((text) => {
-                    throw new Error(text);
-                });
-            }
-        })
-        .catch((error) => {
-            console.error("There was a problem sending your message: ", error);
-            alert("There was a problem sending your message. Error: " + error.message);
-        });
-});
-
-// Function to send message to Telegram bot
-function sendMessageToTelegram(token, message, chatId) {
-    const url = `https://api.telegram.org/bot${token}/sendMessage`;
-    const payload = {
-        chat_id: chatId,
-        text: message,
-    };
-
-    return fetch(url, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-    });
-}
