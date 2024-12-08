@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>ItsReimau</title>
         <link rel="icon" href="https://avatars.githubusercontent.com/u/90613431?v=4" />
         <meta name="description" content="My name is Muhamad Ikbal Maulana alias ItsReimau. Nobody, just someone who loves Evangelion and programming." />
@@ -32,6 +31,7 @@
         <!-- Local CSS -->
         <link rel="stylesheet" href="dist/css/style.css" />
     </head>
+
     <body class="tgr-theme">
         <!-- Preloader -->
         <div id="preloader">
@@ -48,19 +48,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('aboutMe')">About Me</a>
+                            <a class="nav-link" href="#aboutMe">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('skills')">Skills</a>
+                            <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('workExperience')">Work Experience</a>
+                            <a class="nav-link" href="#workExperience">Work Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('education')">Education</a>
+                            <a class="nav-link" href="#education">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" onclick="showSection('projects')">Projects</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                         </li>
                     </ul>
                 </div>
@@ -146,7 +146,7 @@
         </section>
 
         <!-- About Me Section -->
-        <section class="jumbotron text-center dynamic-section" id="aboutMe" style="display: none;">
+        <section class="jumbotron text-center dynamic-section" id="aboutMe">
             <div class="container">
                 <div class="card bg-dark text-white my-4">
                     <div class="card-body">
@@ -158,7 +158,7 @@
         </section>
 
         <!-- Skills Section -->
-        <section class="jumbotron text-center dynamic-section" id="skills" style="display: none;">
+        <section class="jumbotron text-center dynamic-section" id="skills">
             <div class="container">
                 <div class="card bg-dark text-white my-4">
                     <div class="card-body">
@@ -187,7 +187,7 @@
         </section>
 
         <!-- Work Experience Section -->
-        <section class="jumbotron text-center dynamic-section" id="workExperience" style="display: none;">
+        <section class="jumbotron text-center dynamic-section" id="workExperience">
             <div class="container">
                 <div class="card bg-dark text-white my-4">
                     <div class="card-body">
@@ -206,7 +206,7 @@
         </section>
 
         <!-- Education Section -->
-        <section class="jumbotron text-center dynamic-section" id="education" style="display: none;">
+        <section class="jumbotron text-center dynamic-section" id="education">
             <div class="container">
                 <div class="card bg-dark text-white my-4">
                     <div class="card-body">
@@ -223,7 +223,7 @@
         </section>
 
         <!-- Projects Section -->
-        <section class="jumbotron text-center dynamic-section" id="projects" style="display: none;">
+        <section class="jumbotron text-center dynamic-section" id="projects">
             <div class="container">
                 <div class="card bg-dark text-white my-4">
                     <div class="card-body">
@@ -231,20 +231,16 @@
                         <p class="card-text">Here are some of my projects:</p>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item bg-dark text-white">
-                                API Pautres • AutoResponder Web Server-based API <a href="https://github.com/itsreimau/api-pautres" class="btn btn-outline-light btn-sm ms-3">Source Code</a>
-                                <a href="https://api-pautres.bohr.io/" class="btn btn-outline-light btn-sm ms-3">Demo</a>
-                            </li>
-                            <li class="list-group-item bg-dark text-white">
-                                AR (AutoResponder) Express Bot Starter • AutoResponder Web Server-based WhatsApp Bot
+                                AR-EXPRESS-BOT-STARTER • WhatsApp bot was built with Express and integrated through AutoResponder
                                 <a href="https://github.com/itsreimau/ar-express-bot-starter" class="btn btn-outline-light btn-sm ms-3">Source Code</a>
                                 <a href="javascript:void(0);" class="btn btn-outline-light btn-sm ms-3">Demo</a>
                             </li>
                             <li class="list-group-item bg-dark text-white">
-                                Cek Khodam • Telegram Bot <a href="javascript:void(0);" class="btn btn-outline-light btn-sm ms-3">Source Code</a>
+                                Cek Khodam • Telegram bot to check your Khodam <a href="javascript:void(0);" class="btn btn-outline-light btn-sm ms-3">Source Code</a>
                                 <a href="https://t.me/cekkhodam_kabot" class="btn btn-outline-light btn-sm ms-3">Demo</a>
                             </li>
                             <li class="list-group-item bg-dark text-white">
-                                CKPTW-WABOT • WhatsApp Bot <a href="https://github.com/itsreimau/ckptw-wabot" class="btn btn-outline-light btn-sm ms-3">Source Code</a>
+                                CKPTW-WABOT • WhatsApp Bot with @mengkodingan/ckptw <a href="https://github.com/itsreimau/ckptw-wabot" class="btn btn-outline-light btn-sm ms-3">Source Code</a>
                                 <a href="rei-ayanami" class="btn btn-outline-light btn-sm ms-3">Demo</a>
                             </li>
                         </ul>
