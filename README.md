@@ -1,3 +1,3 @@
-# [itsreimau.github.io](https://itsreimau.github.io)
+# [itsreimau.github.io](https://itsreimau.is-a.dev/)
 
 Simple personal website.
