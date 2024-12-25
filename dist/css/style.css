@@ -58,7 +58,7 @@ body.tgr-theme {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 0 0 8px 8px; /* Rounded only at the bottom */
+    border-radius: 0 0 8px 8px;
     transition: background-color 0.3s ease;
 }
 
@@ -140,7 +140,7 @@ body.tgr-theme {
     background-color: #1a1a1a;
     color: #d6e9ff;
     transition: background-color 0.3s ease;
-    box-shadow: 0 2px 10px rgba(10, 37, 63, 0.3); /* Added shadow */
+    box-shadow: 0 2px 10px rgba(10, 37, 63, 0.3);
 }
 
 .list-group-item:hover {
