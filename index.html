@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ItsReimau</title>
         <link rel="icon" href="https://avatars.githubusercontent.com/u/90613431?v=4" />
         <meta name="description" content="My name is Muhamad Ikbal Maulana alias ItsReimau. Nobody, just someone who loves Evangelion and programming." />
         <meta name="keywords" content="muhamad ikbal maulana, itsreimau" />
         <meta name="author" content="Muhamad Ikbal Maulana | ItsReimau" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- Open Graph / Facebook -->
         <meta property="og:url" content="https://itsreimau.is-a.dev" />
@@ -22,256 +22,127 @@
         <meta name="twitter:description" content="My name is Muhamad Ikbal Maulana alias ItsReimau. Nobody, just someone who loves Evangelion and programming." />
         <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/90613431?v=4" />
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
 
-        <!-- Bootstrap Icons CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+        <!-- Boxicons -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
         <!-- Local CSS -->
-        <link rel="stylesheet" href="dist/css/style.css" />
+        <link href="dist/css/style.css" rel="stylesheet" />
     </head>
-
-    <body class="tgr-theme">
-        <!-- Preloader -->
-        <div id="preloader">
-            <img src="https://avatars.githubusercontent.com/u/90613431?v=4" alt="Logo" />
-        </div>
-
+    <body class="bg-gray-900 text-white">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">ItsReimau</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#aboutMe">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#workExperience">Work Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="bg-gray-800 p-4 fixed w-full top-0 z-50">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-xl font-bold hover:text-gray-400 transition-colors">ItsReimau</a>
+                <ul class="flex space-x-4">
+                    <li><a href="#aboutMe" class="hover:text-gray-400 transition-colors">About Me</a></li>
+                    <li><a href="#projects" class="hover:text-gray-400 transition-colors">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-gray-400 transition-colors">Contact</a></li>
+                </ul>
             </div>
         </nav>
 
         <!-- Main Section -->
-        <section class="jumbotron text-center">
-            <div class="container">
-                <img src="https://avatars.githubusercontent.com/u/90613431?v=4" class="profile-img rounded-circle" alt="Foto" />
-                <h5 class="tgr-text-theme"><strong>ItsReimau</strong></h5>
-                <p><span class="bi-geo-alt-fill"></span>&nbsp;Indonesia</p>
-                <p class="opacity-75">Nobody, just someone who loves Evangelion and programming.</p>
-                <div class="d-flex flex-wrap justify-content-center my-4 align-items-center py">
-                    <ul class="text-center nav col-md justify-content-center list-unstyled d-flex">
-                        <li class="mx-2">
-                            <a class="btn btn-outline-light btn-floating m-1 social-btn" href="https://www.facebook.com/itsreimau">
-                                <i class="bi-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="mx-2">
-                            <a class="btn btn-outline-light btn-floating m-1 social-btn" href="https://github.com/itsreimau">
-                                <i class="bi-github"></i>
-                            </a>
-                        </li>
-                        <li class="mx-2">
-                            <a class="btn btn-outline-light btn-floating m-1 social-btn" href="https://instagram.com/itsreimau">
-                                <i class="bi-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="mx-2">
-                            <a class="btn btn-outline-light btn-floating m-1 social-btn" href="https://linkedin.com/in/ikbal-maulana-9078352a7">
-                                <i class="bi-linkedin"></i>
-                            </a>
-                        </li>
-                        <li class="mx-2">
-                            <a class="btn btn-outline-light btn-floating m-1 social-btn" href="https://mastodon.social/@itsreimau">
-                                <i class="bi-mastodon"></i>
-                            </a>
-                        </li>
-                        <li class="mx-2">
-                            <a class="btn btn-outline-light btn-floating m-1 social-btn" href="https://t.me/itsreimau">
-                                <i class="bi-telegram"></i>
-                            </a>
-                        </li>
-                        <li class="mx-2">
-                            <a class="btn btn-outline-light btn-floating m-1 social-btn" href="https://threads.net/itsreimau">
-                                <i class="bi-threads"></i>
-                            </a>
-                        </li>
-                        <li class="mx-2">
-                            <a class="btn btn-outline-light btn-floating m-1 social-btn" href="https://tiktok.com/@itsreimau">
-                                <i class="bi-tiktok"></i>
-                            </a>
-                        </li>
-                        <li class="mx-2">
-                            <a class="btn btn-outline-light btn-floating m-1 social-btn" href="https://x.com/itsreimau">
-                                <i class="bi-twitter-x"></i>
-                            </a>
-                        </li>
-                        <li class="mx-2">
-                            <a class="btn btn-outline-light btn-floating m-1 social-btn" href="https://youtube.com/@itsreimau">
-                                <i class="bi-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
+        <section class="min-h-screen flex items-center justify-center bg-gray-900 py-12 px-4">
+            <div class="max-w-2xl mx-auto text-center">
+                <!-- Profile Picture -->
+                <img src="https://avatars.githubusercontent.com/u/90613431?v=4" class="w-32 h-32 rounded-full mx-auto shadow-2xl border-4 border-gray-700" alt="Profile picture of Muhamad Ikbal Maulana" />
+                <!-- Name and Aliases -->
+                <h1 class="text-4xl font-bold text-white mt-6">Muhamad Ikbal Maulana</h1>
+                <p class="text-gray-400 text-lg mt-1">aka <b>ItsReimau</b>, aka <b>Lunar</b></p>
+                <!-- Description -->
+                <p class="mt-4 text-gray-300 text-lg max-w-md mx-auto">Nobody, just someone who loves Evangelion and programming.</p>
+                <!-- Social Media Icons -->
+                <div class="flex justify-center flex-wrap gap-4 mt-8">
+                    <a href="https://www.facebook.com/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="bx bxl-facebook text-3xl"></i>
+                    </a>
+                    <a href="https://github.com/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="bx bxl-github text-3xl"></i>
+                    </a>
+                    <a href="https://instagram.com/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="bx bxl-instagram text-3xl"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/ikbal-maulana-9078352a7" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="bx bxl-linkedin text-3xl"></i>
+                    </a>
+                    <a href="https://mastodon.social/@itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="bx bxl-mastodon text-3xl"></i>
+                    </a>
+                    <a href="https://t.me/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="bx bxl-telegram text-3xl"></i>
+                    </a>
+                    <a href="https://threads.net/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="bx bxl-threads text-3xl"></i>
+                    </a>
+                    <a href="https://tiktok.com/@itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="bx bxl-tiktok text-3xl"></i>
+                    </a>
+                    <a href="https://x.com/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="bx bxl-twitter text-3xl"></i>
+                    </a>
+                    <a href="https://youtube.com/@itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <i class="bx bxl-youtube text-3xl"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Now Playing on Spotify Section -->
-        <section class="jumbotron text-center" id="nowPlayingOnSpotify">
-            <div class="container">
-                <p class="tgr-text-theme"><strong>Now Playing on Spotify</strong></p>
-                <a href="https://open.spotify.com/user/31253dtz6tzyra5ewpcgpipeuefy">
-                    <img
-                        src="https://spotify-github-profile.kittinanx.com/api/view?uid=31253dtz6tzyra5ewpcgpipeuefy&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true"
-                        alt="Now Playing on Spotify"
-                        width="200"
-                    />
-                </a>
-            </div>
-        </section>
-
-        <!-- About Me Section -->
-        <section class="jumbotron text-center dynamic-section" id="aboutMe">
-            <div class="container">
-                <div class="card bg-dark text-white my-4">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>About Me</strong></h5>
-                        <p class="card-text">Hello! My name is Muhamad Ikbal Maulana alias ItsReimau. Nobody, just someone who loves Evangelion and programming.</p>
-                    </div>
+        <!-- About Me and Projects Section -->
+        <section class="py-16 bg-gray-800 px-4">
+            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- About Me Section -->
+                <div id="aboutMe" class="text-center lg:text-left">
+                    <h2 class="text-3xl font-bold mb-4">About Me</h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto lg:mx-0">Hello! My name is Muhamad Ikbal Maulana alias ItsReimau. Nobody, just someone who loves Evangelion and programming.</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="jumbotron text-center dynamic-section" id="skills">
-            <div class="container">
-                <div class="card bg-dark text-white my-4">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Skills</strong></h5>
-                        <p class="card-text">Here are some of my skills:</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-dark text-white">
-                                Backend Development • Express.js, Node.js, PHP
-                            </li>
-                            <li class="list-group-item bg-dark text-white">
-                                Bot Development • Baileys, PHPTelebot, Telegraf
-                            </li>
-                            <li class="list-group-item bg-dark text-white">
-                                Graphic Design • Canva, PixelLab
-                            </li>
-                            <li class="list-group-item bg-dark text-white">
-                                Microsoft Office • Excel, PowerPoint, Word
-                            </li>
-                            <li class="list-group-item bg-dark text-white">
-                                Video Editing • KineMaster
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Work Experience Section -->
-        <section class="jumbotron text-center dynamic-section" id="workExperience">
-            <div class="container">
-                <div class="card bg-dark text-white my-4">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Work Experience</strong></h5>
-                        <p class="card-text">Here is my work experience:</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-dark text-white">Operational Staff at VYouLive • 2023-Now</li>
-                            <li class="list-group-item bg-dark text-white">Internship at Leuwimalang Village Office • 2023</li>
-                            <li class="list-group-item bg-dark text-white">Founder at MoeLive ID • 2023</li>
-                            <li class="list-group-item bg-dark text-white">CEO at Raturnux (Formerly Hanshin ID) • 2022-2023</li>
-                            <li class="list-group-item bg-dark text-white">Operational Staff at Hanshin ID • 2021-2022</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section class="jumbotron text-center dynamic-section" id="education">
-            <div class="container">
-                <div class="card bg-dark text-white my-4">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Education</strong></h5>
-                        <p class="card-text">Here is my education background:</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-dark text-white">SMK Bhinneka Nusantara • 2023-Now</li>
-                            <li class="list-group-item bg-dark text-white">SMP Negeri 2 Cisarua • 2021-2023</li>
-                            <li class="list-group-item bg-dark text-white">MIS Hidayatul Bayan • 2013-2021</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="jumbotron text-center dynamic-section" id="projects">
-            <div class="container">
-                <div class="card bg-dark text-white my-4">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Projects</strong></h5>
-                        <p class="card-text">Here are some of my projects:</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-dark text-white">
-                                AR-EXPRESS-BOT-STARTER
-                                <a href="https://github.com/itsreimau/ar-express-bot-starter" class="btn btn-outline-light btn-sm ms-3">Source Code</a>
-                                <a href="http://209.38.81.108:2025/api" class="btn btn-outline-light btn-sm ms-3">Demo</a>
-                            </li>
-                            <li class="list-group-item bg-dark text-white">
-                                Cek Khodam
-                                <a href="javascript:void(0);" class="btn btn-outline-light btn-sm ms-3">Source Code</a>
-                                <a href="https://t.me/cekkhodam_kabot" class="btn btn-outline-light btn-sm ms-3">Demo</a>
-                            </li>
-                            <li class="list-group-item bg-dark text-white">
-                                CKPTW-WABOT
-                                <a href="https://github.com/itsreimau/ckptw-wabot" class="btn btn-outline-light btn-sm ms-3">Source Code</a>
-                                <a href="umbrx" class="btn btn-outline-light btn-sm ms-3">Demo</a>
-                            </li>
-                        </ul>
+                <!-- Projects Section -->
+                <div id="projects" class="text-center lg:text-left">
+                    <h2 class="text-3xl font-bold mb-4">Projects</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                            <h3 class="text-xl font-bold">AR-EXPRESS-BOT-STARTER</h3>
+                            <div class="mt-4">
+                                <a href="https://github.com/itsreimau/ar-express-bot-starter" class="text-blue-400 hover:text-blue-300 transition-colors">Source Code</a>
+                                <a href="http://209.38.81.108:2025/api" class="text-blue-400 hover:text-blue-300 transition-colors ml-4">Demo</a>
+                            </div>
+                        </div>
+                        <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                            <h3 class="text-xl font-bold">Cek Khodam</h3>
+                            <div class="mt-4">
+                                <a href="javascript:void(0);" class="text-blue-400 hover:text-blue-300 transition-colors">Source Code</a>
+                                <a href="https://t.me/cekkhodam_kabot" class="text-blue-400 hover:text-blue-300 transition-colors ml-4">Demo</a>
+                            </div>
+                        </div>
+                        <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                            <h3 class="text-xl font-bold">CKPTW-WABOT</h3>
+                            <div class="mt-4">
+                                <a href="https://github.com/itsreimau/ckptw-wabot" class="text-blue-400 hover:text-blue-300 transition-colors">Source Code</a>
+                                <a href="umbrx" class="text-blue-400 hover:text-blue-300 transition-colors ml-4">Demo</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="text-center py-5">
-            <div class="container">
-                <h2 class="tgr-text-theme mb-4">Contact Me</h2>
-                <p>If you want to reach out, feel free to send me an email at:</p>
-                <a href="mailto:iblmln@outlook.co.id" class="btn btn-outline-light"><i class="bi-envelope-at-fill"></i> iblmln@outlook.co.id</a>
+        <section id="contact" class="py-16 bg-gray-900 px-4">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+                <p class="text-gray-400 mb-4">If you want to reach out, feel free to send me an email at:</p>
+                <a href="mailto:iblmln@outlook.co.id" class="text-blue-400 hover:text-blue-300 transition-colors text-lg">iblmln@outlook.co.id</a>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="text-center bg-dark text-white py-4">
-            <div class="container">
-                <p><q>Those who hate themselves, cannot love or trust others.</q> - <i>Rei Ayanami</i></p>
-                <p>Copyright &copy; 2025 <a href="https://itsreimau.is-a.dev/">ItsReimau</a>. All Rights Reserved.</p>
+        <footer class="bg-gray-800 py-8 px-4">
+            <div class="container mx-auto text-center">
+                <p class="text-gray-400 mb-4"><q>Those who hate themselves, cannot love or trust others.</q> - <i>Rei Ayanami</i></p>
+                <p class="text-gray-400">Copyright &copy; 2025 <a href="https://itsreimau.is-a.dev/" class="text-blue-400 hover:text-blue-300 transition-colors">ItsReimau</a>. All Rights Reserved.</p>
             </div>
         </footer>
-
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-        <!-- Local JS -->
-        <script src="dist/js/script.js"></script>
     </body>
 </html>
