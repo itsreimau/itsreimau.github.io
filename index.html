@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -28,17 +27,23 @@
         <!-- Boxicons -->
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
         <!-- Local CSS -->
-        <link href="dist/css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="dist/css/style.css" />
     </head>
     <body class="bg-gray-900 text-white">
         <!-- Main Section -->
         <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900 py-12 px-4">
-            <div class="max-w-2xl mx-auto text-center">
+            <div class="max-w-2xl mx-auto text-center neubrutalism bg-gray-800 p-8">
                 <!-- Profile Picture -->
                 <img
                     src="https://avatars.githubusercontent.com/u/90613431?v=4"
-                    class="w-32 h-32 rounded-full mx-auto shadow-2xl border-4 border-gray-700 hover:border-gray-500 transition-all duration-300"
+                    class="w-32 h-32 rounded-full mx-auto shadow-2xl border-4 border-black hover:border-gray-500 transition-all duration-300"
                     alt="Profile picture of Muhamad Ikbal Maulana"
                 />
                 <!-- Name and Aliases -->
@@ -46,6 +51,64 @@
                 <p class="text-gray-400 text-lg mt-1">aka <b class="text-gray-300">ItsReimau</b>, aka <b class="text-gray-300">Lunar</b></p>
                 <!-- Description -->
                 <p class="mt-4 text-gray-300 text-lg max-w-md mx-auto">An enthusiast of Evangelion and programming.</p>
+                <!-- Now Playing on Spotify -->
+                <div class="mt-8 flex justify-center">
+                    <a href="https://open.spotify.com/user/31253dtz6tzyra5ewpcgpipeuefy">
+                        <img
+                            src="https://spotify-github-profile.kittinanx.com/api/view?uid=31253dtz6tzyra5ewpcgpipeuefy&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true"
+                            alt="Now Playing on Spotify"
+                            width="200"
+                            class="neubrutalism"
+                        />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me and Projects Section -->
+        <section class="py-16 bg-gray-800 px-4">
+            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- About Me Section -->
+                <div id="aboutMe" class="text-center lg:text-left neubrutalism bg-gray-700 p-8">
+                    <h2 class="text-3xl font-bold mb-4 text-white">About Me</h2>
+                    <p class="text-gray-400 max-w-2xl mx-auto lg:mx-0">Hello! My name is Muhamad Ikbal Maulana, and my username is ItsReimau. I am also often called Ikbal, Reimau, or Lunar. An enthusiast of Evangelion and programming.</p>
+                </div>
+                <!-- Projects Section -->
+                <div id="projects" class="text-center lg:text-left neubrutalism bg-gray-700 p-8">
+                    <h2 class="text-3xl font-bold mb-4 text-white">Projects</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow neubrutalism">
+                            <h3 class="text-xl font-bold text-white">AR-EXPRESS-BOT-STARTER</h3>
+                            <div class="mt-4">
+                                <a href="https://github.com/itsreimau/ar-express-bot-starter" class="text-blue-400 hover:text-blue-300 transition-colors">Source Code</a>
+                                <a href="http://209.38.81.108:2025/api" class="text-blue-400 hover:text-blue-300 transition-colors ml-4">Demo</a>
+                            </div>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow neubrutalism">
+                            <h3 class="text-xl font-bold text-white">Cek Khodam</h3>
+                            <div class="mt-4">
+                                <a href="javascript:void(0);" class="text-blue-400 hover:text-blue-300 transition-colors">Source Code</a>
+                                <a href="https://t.me/cekkhodam_kabot" class="text-blue-400 hover:text-blue-300 transition-colors ml-4">Demo</a>
+                            </div>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow neubrutalism">
+                            <h3 class="text-xl font-bold text-white">CKPTW-WABOT</h3>
+                            <div class="mt-4">
+                                <a href="https://github.com/itsreimau/ckptw-wabot" class="text-blue-400 hover:text-blue-300 transition-colors">Source Code</a>
+                                <a href="umbrx" class="text-blue-400 hover:text-blue-300 transition-colors ml-4">Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gray-900 px-4">
+            <div class="container mx-auto text-center neubrutalism bg-gray-800 p-8">
+                <h2 class="text-3xl font-bold mb-4 text-white">Contact Me</h2>
+                <p class="text-gray-400 mb-4">If you want to reach out, feel free to send me an email at:</p>
+                <a href="mailto:iblmln@outlook.co.id" class="text-blue-400 hover:text-blue-300 transition-colors text-lg">iblmln@outlook.co.id</a>
                 <!-- Social Media Icons -->
                 <div class="flex justify-center flex-wrap gap-4 mt-8">
                     <a href="https://www.facebook.com/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300 social-icon">
@@ -79,69 +142,12 @@
                         <i class="bx bxl-youtube text-3xl"></i>
                     </a>
                 </div>
-                <!-- Now Playing on Spotify -->
-                <div class="mt-8 flex justify-center">
-                    <a href="https://open.spotify.com/user/31253dtz6tzyra5ewpcgpipeuefy">
-                        <img
-                            src="https://spotify-github-profile.kittinanx.com/api/view?uid=31253dtz6tzyra5ewpcgpipeuefy&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true"
-                            alt="Now Playing on Spotify"
-                            width="200"
-                        />
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Me and Projects Section -->
-        <section class="py-16 bg-gray-800 px-4">
-            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- About Me Section -->
-                <div id="aboutMe" class="text-center lg:text-left">
-                    <h2 class="text-3xl font-bold mb-4">About Me</h2>
-                    <p class="text-gray-400 max-w-2xl mx-auto lg:mx-0">Hello! My name is Muhamad Ikbal Maulana, and my username is ItsReimau. I am also often called Ikbal, Reimau, or Lunar. An enthusiast of Evangelion and programming.</p>
-                </div>
-                <!-- Projects Section -->
-                <div id="projects" class="text-center lg:text-left">
-                    <h2 class="text-3xl font-bold mb-4">Projects</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                            <h3 class="text-xl font-bold">AR-EXPRESS-BOT-STARTER</h3>
-                            <div class="mt-4">
-                                <a href="https://github.com/itsreimau/ar-express-bot-starter" class="text-blue-400 hover:text-blue-300 transition-colors">Source Code</a>
-                                <a href="http://209.38.81.108:2025/api" class="text-blue-400 hover:text-blue-300 transition-colors ml-4">Demo</a>
-                            </div>
-                        </div>
-                        <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                            <h3 class="text-xl font-bold">Cek Khodam</h3>
-                            <div class="mt-4">
-                                <a href="javascript:void(0);" class="text-blue-400 hover:text-blue-300 transition-colors">Source Code</a>
-                                <a href="https://t.me/cekkhodam_kabot" class="text-blue-400 hover:text-blue-300 transition-colors ml-4">Demo</a>
-                            </div>
-                        </div>
-                        <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                            <h3 class="text-xl font-bold">CKPTW-WABOT</h3>
-                            <div class="mt-4">
-                                <a href="https://github.com/itsreimau/ckptw-wabot" class="text-blue-400 hover:text-blue-300 transition-colors">Source Code</a>
-                                <a href="umbrx" class="text-blue-400 hover:text-blue-300 transition-colors ml-4">Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="py-16 bg-gray-900 px-4">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
-                <p class="text-gray-400 mb-4">If you want to reach out, feel free to send me an email at:</p>
-                <a href="mailto:iblmln@outlook.co.id" class="text-blue-400 hover:text-blue-300 transition-colors text-lg">iblmln@outlook.co.id</a>
             </div>
         </section>
 
         <!-- Footer -->
         <footer class="bg-gray-800 py-8 px-4">
-            <div class="container mx-auto text-center">
+            <div class="container mx-auto text-center neubrutalism bg-gray-700 p-8">
                 <p class="text-gray-400 mb-4"><q>Those who hate themselves, cannot love or trust others.</q> - <i>Rei Ayanami</i></p>
                 <p class="text-gray-400">Copyright &copy; 2025 <a href="https://itsreimau.is-a.dev/" class="text-blue-400 hover:text-blue-300 transition-colors">ItsReimau</a>. All Rights Reserved.</p>
             </div>
