@@ -36,19 +36,19 @@
         <!-- Local CSS -->
         <link rel="stylesheet" href="dist/css/style.css" />
     </head>
-    <body class="bg-gray-900 text-white">
+    <body class="bg-gray-900 text-white font-roboto">
         <!-- Main Section -->
-        <section class="min-h-screen flex items-center justify-center bg-[url('dist/img/main-bg.jpg')] bg-cover bg-center py-12 px-4">
-            <div class="max-w-2xl mx-auto text-center neubrutalism bg-gray-800 p-8 opacity-80">
+        <section class="min-h-screen flex items-center justify-center bg-cover bg-center py-16 px-4 bg-[url('dist/img/main-bg.jpg')]">
+            <div class="max-w-3xl mx-auto text-center neubrutalism bg-gray-800 p-10 rounded-xl shadow-lg opacity-80">
                 <!-- Profile Picture -->
                 <img
                     src="https://avatars.githubusercontent.com/u/90613431?v=4"
-                    class="w-32 h-32 rounded-full mx-auto shadow-2xl border-4 border-black hover:border-gray-500 transition-all duration-300"
+                    class="w-40 h-40 rounded-full mx-auto shadow-xl border-4 border-black hover:border-gray-500 transition-all duration-300"
                     alt="Profile picture of Muhamad Ikbal Maulana"
                 />
                 <!-- Name and Aliases -->
                 <h1 class="text-4xl font-bold text-white mt-6">Muhamad Ikbal Maulana</h1>
-                <p class="text-gray-400 text-lg mt-1">aka <b class="text-gray-300">ItsReimau</b>, aka <b class="text-gray-300">Lunar</b></p>
+                <p class="text-gray-400 text-lg mt-2">aka <b class="text-gray-300">ItsReimau</b>, aka <b class="text-gray-300">Lunar</b></p>
                 <!-- Description -->
                 <p class="mt-4 text-gray-300 text-lg max-w-md mx-auto">An enthusiast of Evangelion and programming.</p>
                 <!-- Now Playing on Spotify -->
@@ -57,7 +57,7 @@
                         <img
                             src="https://spotify-github-profile.kittinanx.com/api/view?uid=31253dtz6tzyra5ewpcgpipeuefy&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&bar_color=53b14f&bar_color_cover=true"
                             alt="Now Playing on Spotify"
-                            width="200"
+                            width="250"
                             class="neubrutalism"
                         />
                     </a>
@@ -67,42 +67,59 @@
 
         <!-- About Me and Projects Section -->
         <section class="py-16 bg-gray-800 px-4">
-            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <!-- About Me Section -->
-                <div id="aboutMe" class="text-center lg:text-left neubrutalism bg-gray-700 p-8">
+                <div id="aboutMe" class="text-center lg:text-left neubrutalism bg-gray-700 p-8 rounded-xl shadow-lg">
                     <h2 class="text-3xl font-bold mb-4 text-white">About Me</h2>
                     <p class="text-gray-400 max-w-2xl mx-auto lg:mx-0">Hello! My name is Muhamad Ikbal Maulana, and my username is ItsReimau. I am also often called Ikbal, Reimau, or Lunar. An enthusiast of Evangelion and programming.</p>
                 </div>
                 <!-- Projects Section -->
-                <div id="projects" class="text-center lg:text-left neubrutalism bg-gray-700 p-8">
-                    <h2 class="text-3xl font-bold mb-4 text-white">Projects</h2>
+                <div id="projects" class="text-center lg:text-left neubrutalism bg-gray-700 p-8 rounded-xl shadow-lg">
+                    <h2 class="text-3xl font-bold mb-6 text-white">Projects</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow neubrutalism">
+                        <!-- Projects Card -->
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow relative neubrutalism">
                             <h3 class="text-xl font-bold text-white">AR-EXPRESS-BOT-STARTER</h3>
-                            <div class="mt-4">
-                                <a href="https://github.com/itsreimau/ar-express-bot-starter" class="text-blue-400 hover:text-blue-300 transition-colors">Source Code</a>
-                                <a href="http://aebs.wosib11334.serv00.net/api" class="text-blue-400 hover:text-blue-300 transition-colors ml-4">Demo</a>
+                            <div class="mt-6 flex gap-4">
+                                <a href="https://github.com/itsreimau/ar-express-bot-starter" target="_blank" class="text-white p-2 rounded-full hover:text-gray-500 transition-colors absolute bottom-2 right-2">
+                                    <i class="bx bxl-github text-lg"></i>
+                                </a>
+                                <a href="http://aebs.wosib11334.serv00.net/api" target="_blank" class="text-white p-2 rounded-full hover:text-green-500 transition-colors absolute bottom-2 right-14">
+                                    <i class="bx bx-link-external text-lg"></i>
+                                </a>
                             </div>
                         </div>
-                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow neubrutalism">
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow relative neubrutalism">
                             <h3 class="text-xl font-bold text-white">CKPTW-WABOT</h3>
-                            <div class="mt-4">
-                                <a href="https://github.com/itsreimau/ckptw-wabot" class="text-blue-400 hover:text-blue-300 transition-colors">Source Code</a>
-                                <a href="https://wa.me/6281918403548" class="text-blue-400 hover:text-blue-300 transition-colors ml-4">Demo</a>
+                            <div class="mt-6 flex gap-4">
+                                <a href="https://github.com/itsreimau/ckptw-wabot" target="_blank" class="text-white p-2 rounded-full hover:text-gray-500 transition-colors absolute bottom-2 right-2">
+                                    <i class="bx bxl-github text-lg"></i>
+                                </a>
+                                <a href="https://wa.me/6281918403548" target="_blank" class="text-white p-2 rounded-full hover:text-green-500 transition-colors absolute bottom-2 right-14">
+                                    <i class="bx bx-link-external text-lg"></i>
+                                </a>
                             </div>
                         </div>
-                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow neubrutalism">
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow relative neubrutalism">
                             <h3 class="text-xl font-bold text-white">TELEGRAF-BOT-STARTER</h3>
-                            <div class="mt-4">
-                                <a href="https://github.com/itsreimau/telegraf-bot-starter" class="text-blue-400 hover:text-blue-300 transition-colors">Source Code</a>
-                                <a href="https://t.me/xelestial_kabot" class="text-blue-400 hover:text-blue-300 transition-colors ml-4">Demo</a>
+                            <div class="mt-6 flex gap-4">
+                                <a href="https://github.com/itsreimau/telegraf-bot-starter" target="_blank" class="text-white p-2 rounded-full hover:text-gray-500 transition-colors absolute bottom-2 right-2">
+                                    <i class="bx bxl-github text-lg"></i>
+                                </a>
+                                <a href="https://t.me/xelestial_ubot" target="_blank" class="text-white p-2 rounded-full hover:text-green-500 transition-colors absolute bottom-2 right-14">
+                                    <i class="bx bx-link-external text-lg"></i>
+                                </a>
                             </div>
                         </div>
-                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow neubrutalism">
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow relative neubrutalism">
                             <h3 class="text-xl font-bold text-white">VIDEY-BULK-DOWNLOADER</h3>
-                            <div class="mt-4">
-                                <a href="https://github.com/itsreimau/videy-bulk-downloaderr" class="text-blue-400 hover:text-blue-300 transition-colors">Source Code</a>
-                                <a href="javascript:void(0)" class="text-blue-400 hover:text-blue-300 transition-colors ml-4">Demo</a>
+                            <div class="mt-6 flex gap-4">
+                                <a href="https://github.com/itsreimau/videy-bulk-downloaderr" target="_blank" class="text-white p-2 rounded-full hover:text-gray-500 transition-colors absolute bottom-2 right-2">
+                                    <i class="bx bxl-github text-lg"></i>
+                                </a>
+                                <span class="text-white p-2 rounded-full hover:text-green-500 transition-colors absolute bottom-2 right-14 cursor-not-allowed">
+                                    <i class="bx bx-link-external text-lg"></i>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -112,40 +129,40 @@
 
         <!-- Contact Section -->
         <section id="contact" class="py-16 bg-gray-900 px-4">
-            <div class="container mx-auto text-center neubrutalism bg-gray-800 p-8">
-                <h2 class="text-3xl font-bold mb-4 text-white">Contact Me</h2>
+            <div class="container mx-auto text-center neubrutalism bg-gray-800 p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-6 text-white">Contact Me</h2>
                 <p class="text-gray-400 mb-4">If you want to reach out, feel free to send me an email at:</p>
                 <a href="mailto:itsreimau@outlook.jp" class="text-blue-400 hover:text-blue-300 transition-colors text-lg">itsreimau@outlook.jp</a>
                 <!-- Social Media Icons -->
-                <div class="flex justify-center flex-wrap gap-4 mt-8">
-                    <a href="https://www.facebook.com/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300 social-icon">
+                <div class="flex justify-center gap-6 mt-8">
+                    <a href="https://www.facebook.com/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
                         <i class="bx bxl-facebook text-3xl"></i>
                     </a>
-                    <a href="https://github.com/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300 social-icon">
+                    <a href="https://github.com/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
                         <i class="bx bxl-github text-3xl"></i>
                     </a>
-                    <a href="https://instagram.com/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300 social-icon">
+                    <a href="https://instagram.com/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
                         <i class="bx bxl-instagram text-3xl"></i>
                     </a>
-                    <a href="https://linkedin.com/in/ikbal-maulana-9078352a7" class="text-gray-400 hover:text-white transition-colors duration-300 social-icon">
+                    <a href="https://linkedin.com/in/ikbal-maulana-9078352a7" class="text-gray-400 hover:text-white transition-colors duration-300">
                         <i class="bx bxl-linkedin text-3xl"></i>
                     </a>
-                    <a href="https://mastodon.social/@itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300 social-icon">
+                    <a href="https://mastodon.social/@itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
                         <i class="bx bxl-mastodon text-3xl"></i>
                     </a>
-                    <a href="https://t.me/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300 social-icon">
+                    <a href="https://t.me/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
                         <i class="bx bxl-telegram text-3xl"></i>
                     </a>
-                    <a href="https://threads.net/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300 social-icon">
+                    <a href="https://threads.net/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
                         <i class="bx bxl-threads text-3xl"></i>
                     </a>
-                    <a href="https://tiktok.com/@itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300 social-icon">
+                    <a href="https://tiktok.com/@itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
                         <i class="bx bxl-tiktok text-3xl"></i>
                     </a>
-                    <a href="https://x.com/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300 social-icon">
+                    <a href="https://x.com/itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
                         <i class="bx bxl-twitter text-3xl"></i>
                     </a>
-                    <a href="https://youtube.com/@itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300 social-icon">
+                    <a href="https://youtube.com/@itsreimau" class="text-gray-400 hover:text-white transition-colors duration-300">
                         <i class="bx bxl-youtube text-3xl"></i>
                     </a>
                 </div>
@@ -154,7 +171,7 @@
 
         <!-- Footer -->
         <footer class="bg-gray-800 py-8 px-4">
-            <div class="container mx-auto text-center neubrutalism bg-gray-700 p-8">
+            <div class="container mx-auto text-center neubrutalism bg-gray-700 p-8 rounded-xl">
                 <p class="text-gray-400 mb-4"><q>Those who hate themselves, cannot love or trust others.</q> - <i>Rei Ayanami</i></p>
                 <p class="text-gray-400">Copyright &copy; 2025 <a href="https://itsreimau.is-a.dev/" class="text-blue-400 hover:text-blue-300 transition-colors">ItsReimau</a>. All Rights Reserved.</p>
             </div>
