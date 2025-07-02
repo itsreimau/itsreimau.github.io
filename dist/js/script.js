@@ -1,3 +1,4 @@
+// Tailwind Configuration
 tailwind.config = {
     theme: {
         extend: {
@@ -29,8 +30,30 @@ tailwind.config = {
     }
 };
 
-AOS.init({
-    duration: 800,
-    easing: "ease-in-out",
-    once: true
+// Mobile menu toggle functionality
+document.addEventListener("DOMContentLoaded", function() {
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    mobileMenuButton.addEventListener("click", function() {
+        const isHidden = mobileMenu.classList.contains("hidden");
+
+        // Toggle menu visibility
+        if (isHidden) {
+            mobileMenu.classList.remove("hidden");
+            mobileMenuButton.innerHTML = '<i class="fas fa-times text-xl"></i>';
+        } else {
+            mobileMenu.classList.add("hidden");
+            mobileMenuButton.innerHTML = '<i class="fas fa-bars text-xl"></i>';
+        }
+    });
+
+    // Close menu when clicking on a link (for single page navigation)
+    const mobileLinks = mobileMenu.querySelectorAll("a");
+    mobileLinks.forEach((link) => {
+        link.addEventListener("click", function() {
+            mobileMenu.classList.add("hidden");
+            mobileMenuButton.innerHTML = '<i class="fas fa-bars text-xl"></i>';
+        });
+    });
 });
