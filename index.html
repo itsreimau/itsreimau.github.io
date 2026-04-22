@@ -1,76 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern LinkTree</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="welcome-panel" id="welcomePanel">
-        <div class="welcome-content animate__animated animate__fadeIn">
-            <div class="welcome-icon">
-                <i class="fas fa-hand-sparkles"></i>
-            </div>
-            <h2>Welcome to My Website</h2>
-            <p>Thanks for visiting! Click anywhere to explore.</p>
-            <button id="welcomeCloseBtn">Get Started</button>
-        </div>
-    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+        <title>itsreimau.is-a.dev</title>
+        <meta name="description" content="Reimau von Lilitz - An enthusiast of Evangelion and programming." />
+        <meta name="keywords" content="reimau von lilitz, muhamad ikbal maulana, itsreimau" />
+        <meta name="author" content="Reimau von Lilitz" />
 
-    <div class="container animate__animated animate__fadeIn animate__delay-1s">
-        <div class="profile">
-            <div class="profile-pic-container">
-                <img src="" alt="Profile Picture" class="profile-pic" id="profilePic">
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/90613431?v=4" />
+        <link rel="canonical" href="https://itsreimau.is-a.dev/" />
+
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Reimau von Lilitz",
+                "alternateName": "Muhamad Ikbal Maulana",
+                "url": "https://itsreimau.is-a.dev",
+                "sameAs": [
+                    "https://facebook.com/itsreimau",
+                    "https://github.com/itsreimau",
+                    "https://instagram.com/itsreimau",
+                    "https://linkedin.com/in/itsreimau",
+                    "https://mastodon.social/@itsreimau",
+                    "https://x.com/itsreimau",
+                    "https://threads.net/itsreimau",
+                    "https://tiktok.com/@itsreimau",
+                    "https://youtube.com/channel/UCJ0VtnpD9lBAi6D5ywA5klg"
+                ],
+                "knowsAbout": ["Muhamad Ikbal Maulana", "Reimau von Lilitz", "ItsReimau"],
+                "description": "Reimau von Lilitz - An enthusiast of Evangelion and programming."
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="profile">
+                <div class="profile-pic-frame">
+                    <img class="profile-pic" id="profileImg" alt="profile" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000000'/%3E%3Ctext x='50' y='67' font-size='50' text-anchor='middle' fill='white'%3E☯%3C/text%3E%3C/svg%3E" />
+                </div>
+                <h1 class="name" id="displayName">Loading...</h1>
+                <div class="bio" id="displayBio">Loading profile...</div>
             </div>
-            <h1 class="profile-name animate__animated animate__fadeInUp animate__delay-1s" id="profileName">Your Name</h1>
-            <p class="profile-bio animate__animated animate__fadeInUp animate__delay-1s" id="profileBio">Your short biography or description goes here. Keep it concise and interesting!</p>
+
+            <div class="links-grid" id="linksList"></div>
+
+            <div class="footer">
+                <span>◼ Made with DeepSeek by Reimau von Lilitz ◼</span>
+            </div>
         </div>
-        
-        <div class="links-container" id="linksContainer">
-            <!-- Links will be added here from JSON data -->
-        </div>
-        
-        <div class="footer animate__animated animate__fadeInUp animate__delay-2s">
-            &copy; <span id="currentYear"></span> FlowFalcon - Modern Linktree
-        </div>
-    </div>
-    
-    <div class="music-player" id="musicPlayer">
-        <button class="music-toggle" id="musicToggle">
-            <i class="fas fa-music"></i>
-        </button>
-        <div class="music-header">
-            <img src="" alt="Album Art" class="album-art" id="albumArt">
-            <div class="music-info">
-                <div class="song-title" id="songTitle">Song Title</div>
-                <div class="artist" id="artist">Artist Name</div>
-                <div class="lyrics-wrapper">
-                    <div class="lyrics-container">
-                        <div class="lyrics" id="lyrics">
-                            <!-- Lyrics will be displayed here -->
-                        </div>
+
+        <div class="music-player" id="musicPlayerWidget">
+            <button class="toggle-player" id="togglePlayerBtn"><i class="iconoir-arrow-down"></i></button>
+            <div class="player-header">
+                <img class="album-art-sm" id="playerAlbumArt" alt="album art" />
+                <div class="song-meta">
+                    <div class="song-title" id="playerSongTitle">Loading...</div>
+                    <div class="artist-name" id="playerArtist">Loading...</div>
+                </div>
+            </div>
+            <div class="lyrics-box" id="lyricsBox">
+                <div id="activeLyricLine">Loading lyrics...</div>
+            </div>
+            <div class="controls">
+                <button class="play-pause-btn" id="playPauseBtnMusic">
+                    <i class="iconoir-play" id="playIcon"></i>
+                </button>
+                <div class="progress-area">
+                    <div class="progress-bg" id="progressBg">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="time-stamp">
+                        <span id="currentTimeLabel">0:00</span>
+                        <span id="durationLabel">0:00</span>
                     </div>
                 </div>
             </div>
+            <audio id="audioElem" preload="metadata"></audio>
         </div>
-        <div class="music-controls">
-            <button class="play-pause" id="playPauseBtn">
-                <i class="fas fa-play" id="playPauseIcon"></i>
-            </button>
-            <div class="progress-container">
-                <div class="progress-bar" id="progressBar"></div>
-            </div>
-            <div class="time-display">
-                <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
-            </div>
-        </div>
-        
-        <audio id="audioPlayer" preload="metadata"></audio>
-    </div>
 
-    <script src="script.js"></script>
-</body>
+        <div id="welcomeOverlay" class="welcome-modal">
+            <div class="welcome-card">
+                <i class="iconoir-heart"></i>
+                <h2>WELCOME!</h2>
+                <p>YOU ACKNOWLEDGE THE POSSIBILITY OF PAIN AND SEIZURE.</p>
+                <button id="closeWelcomeBtn">YES</button>
+            </div>
+        </div>
+
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
