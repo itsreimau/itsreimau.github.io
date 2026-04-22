@@ -91,6 +91,7 @@ function initializeFromJSON(data) {
 
     profileName.textContent = data.profile.name;
     profileBio.textContent = data.profile.bio;
+    profilePic.crossOrigin = "Anonymous";
     profilePic.src = data.profile.image;
     
     profilePic.onload = function() {
