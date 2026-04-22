@@ -1,71 +1,172 @@
 {
     "profile": {
-        "name": "Your Name",
-        "bio": "Digital creator & content curator. Welcome to my online space where I share my passions and connect with you!",
-        "image": "YOUR_PROFILE_IMAGE_URL_HERE"
+        "name": "Reimau von Lilitz",
+        "bio": "An enthusiast of Evangelion and programming.",
+        "image": "https://avatars.githubusercontent.com/u/90613431?v=4"
     },
     "links": [
         {
-            "title": "Instagram",
-            "url": "https://instagram.com/yourusername",
-            "icon": "fab fa-instagram"
+            "title": "CV",
+            "url": "",
+            "icon": "fab fa-document"
         },
         {
-            "title": "Twitter",
-            "url": "https://twitter.com/yourusername",
-            "icon": "fab fa-twitter"
-        },
-        {
-            "title": "YouTube",
-            "url": "https://youtube.com/yourchannel",
-            "icon": "fab fa-youtube"
-        },
-        {
-            "title": "Website",
-            "url": "https://yourwebsite.com",
-            "icon": "fas fa-globe"
-        },
-        {
-            "title": "TikTok",
-            "url": "https://tiktok.com/@yourusername",
-            "icon": "fab fa-tiktok"
-        },
-        {
-            "title": "Pinterest",
-            "url": "https://pinterest.com/yourusername",
-            "icon": "fab fa-pinterest"
+            "title": "Fesnuk",
+            "url": "https://facebook.com/itsreimau",
+            "icon": "fab fa-facebook"
         },
         {
             "title": "GitHub",
-            "url": "https://github.com/yourusername",
+            "url": "https://github.com/itsreimau",
             "icon": "fab fa-github"
         },
         {
+            "title": "Instagram",
+            "url": "https://instagram.com/itsreimau",
+            "icon": "fab fa-instagram"
+        },
+        {
             "title": "LinkedIn",
-            "url": "https://linkedin.com/in/yourusername",
-            "icon": "fab fa-linkedin"
+            "url": "https://linkedin.com/in/itsreimau",
+            "icon": "fas fa-linkedin"
+        },
+        {
+            "title": "Mastodon",
+            "url": "https://mastodon.social/@itsreimau",
+            "icon": "fab fa-mastodon"
+        },
+        {
+            "title": "X",
+            "url": "https://x.com/itsreimau",
+            "icon": "fab fa-twitter"
+        },
+        {
+            "title": "Threads",
+            "url": "https://threads.net/itsreimau",
+            "icon": "fab fa-threads"
+        },
+        {
+            "title": "Sarang Monyet",
+            "url": "https://tiktok.com/@itsreimau",
+            "icon": "fab fa-tiktok"
+        },
+        {
+            "title": "YouTube",
+            "url": "https://youtube.com/channel/UCJ0VtnpD9lBAi6D5ywA5klg",
+            "icon": "fab fa-youtube"
         }
     ],
     "music": {
-        "title": "Your Song Title",
-        "artist": "Artist Name",
-        "albumArt": "YOUR_ALBUM_ART_URL_HERE",
-        "audioFile": "YOUR_AUDIO_FILE_URL.mp3", 
-        "duration": 180,
+        "title": "Pancarona",
+        "artist": "Barasuara",
+        "albumArt": "https://files.catbox.moe/alrxxj.jpg",
+        "audioFile": "https://files.catbox.moe/xfh3zw.mp3",
+        "duration": 261,
         "timeSync": [
-            { "time": 0, "text": "Intro music..." },
-            { "time": 5, "text": "First verse line 1\nBaris terjemahan" },
-            { "time": 10, "text": "First verse line 2\nBaris terjemahan" },
-            { "time": 15, "text": "First verse line 3\nBaris terjemahan" },
-            { "time": 20, "text": "First verse line 4\nBaris terjemahan" },
-            { "time": 25, "text": "Pre-chorus line 1\nBaris terjemahan" },
-            { "time": 30, "text": "Pre-chorus line 2\nBaris terjemahan" },
-            { "time": 35, "text": "Chorus line 1\nBaris terjemahan" },
-            { "time": 40, "text": "Chorus line 2\nBaris terjemahan" },
-            { "time": 45, "text": "Chorus line 3\nBaris terjemahan" },
-            { "time": 50, "text": "Chorus line 4\nBaris terjemahan" },
-            { "time": 55, "text": "Post-chorus\nBaris terjemahan" },
-            { "time": 60, "text": "Second verse line 1\nBaris terjemahan" }
+            {
+                "time": 1,
+                "text": "Melarutkan anganku"
+            },
+            {
+                "time": 6,
+                "text": "Hati yang meninggalkanmu"
+            },
+            {
+                "time": 11,
+                "text": "Membiru, membisu"
+            },
+            {
+                "time": 17,
+                "text": "Mereka lambat laun"
+            },
+            {
+                "time": 24,
+                "text": "Kan merasa tak kuasa"
+            },
+            {
+                "time": 30,
+                "text": "Menahan geram batinmu"
+            },
+            {
+                "time": 36,
+                "text": "Angkasa, samudra"
+            },
+            {
+                "time": 41,
+                "text": "Terhampar jawaban"
+            },
+            {
+                "time": 51,
+                "text": "Kau mulai meragu akan isi hatimu"
+            },
+            {
+                "time": 58,
+                "text": "Pancarona"
+            },
+            {
+                "time": 63,
+                "text": "Segala perubahan dan ketidakpastian"
+            },
+            {
+                "time": 69,
+                "text": "Pancarona"
+            },
+            {
+                "time": 78,
+                "text": "Kesunyian melagukan kerinduan"
+            },
+            {
+                "time": 89,
+                "text": "Kesepian, melankolia"
+            },
+            {
+                "time": 100,
+                "text": "Kesunyian melagukan kerinduan"
+            },
+            {
+                "time": 111,
+                "text": "Kesepian, melankolia"
+            },
+            {
+                "time": 143,
+                "text": "Jangan kau meragu"
+            },
+            {
+                "time": 146,
+                "text": "Jangan kau meragu"
+            },
+            {
+                "time": 149,
+                "text": "Jangan kau meragu"
+            },
+            {
+                "time": 164,
+                "text": "Kau mulai meragu akan isi hatimu"
+            },
+            {
+                "time": 170,
+                "text": "Pancarona"
+            },
+            {
+                "time": 175,
+                "text": "Segala perubahan dan ketidakpastian"
+            },
+            {
+                "time": 180,
+                "text": "Pancarona"
+            },
+            {
+                "time": 186,
+                "text": "Jauh berlari dari apa yang kau cari"
+            },
+            {
+                "time": 191,
+                "text": "Pancarona"
+            },
+            {
+                "time": 197,
+                "text": "Lekaslah pulang"
+            }
         ]
     }
 }
